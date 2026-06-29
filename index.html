@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="left">kanban</div>
+            <div class="right"><button id="toggle-modal">add new task</button></div>
+        </nav>
+        <section class="board">
+            <div id="todo" class="task-col">
+                <div  class="heading">
+                    <div class="left">to do</div>
+                    <div class="right">count</div>
+
+                </div>
+                <div draggable="true" class="task">
+                    <h2>task 1</h2>
+                    <p>description for task 1</p>
+                    <button>delete</button>
+                </div>
+            </div>
+            <div id="progress" class="task-col">
+                <div class="heading">
+                    <div class="left">in progress</div>
+                    <div class="right">count</div>
+                </div>
+            </div>
+            <div id="done" class="task-col">
+                <div class="heading">
+                    <div class="left">done</div>
+                    <div class="right">count</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal  add-new-task">
+        <div class="bg"></div>
+        <div class="center">
+        <input type="text" id="task-tital" placeholder="task title">
+        <textarea  id="task-desc" placeholder="task description"></textarea>
+        <button id="add-new-task" class="add-task-btn">add task</button>
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
